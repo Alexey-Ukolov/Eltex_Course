@@ -1,0 +1,43 @@
+* {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1)
+
+}
+
+.location {
+    font-weight: 600;
+    font-size: 30px;
+
+}
+
+.nav-links {
+    list-style: none;
+    
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #68686A;
+    
+}
+
+.nav-links li a:hover {
+    color: #61C15C;
+    text-shadow: 0 0 10px #61C15C;
+}
