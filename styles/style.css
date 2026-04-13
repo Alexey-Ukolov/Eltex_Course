@@ -16,7 +16,7 @@ nav {
 
 .location {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 2rem;
 
 }
 
@@ -50,7 +50,7 @@ nav {
     max-width: 700px;
 }
 
-.hero-content h2 {
+h2 {
     font-weight: 700px;
     font-size: 52px;
     margin-bottom: 10px;
@@ -68,8 +68,11 @@ nav {
   border-radius: 0 0 200px 200px;
 }
 
-.blog1,
-.blog2 {
+.blogs {
+    margin-bottom: 3rem;
+}
+
+.blog {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px 5%;
@@ -79,9 +82,9 @@ nav {
 .blog-content {
     background-color: #FEF3EF;
     padding: 3rem;
-}
+}   
 
-.blog2 .blog-content {
+.blog:nth-child(2) .blog-content {
     background-color: #F4FBF4;
 }
 
@@ -112,4 +115,229 @@ nav {
 .blog-btn:hover, .blog-btn:focus {
     background: #61C15C40;
 }
+
+.my-skills {
+    padding: 20px 5%;
+    margin-bottom: 3rem;
+}
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 30px;
+}
+
+.skill {
+    border-bottom: 3px solid #BDC1CA;
+    padding: 1rem 0;  
+    font-size: 24px;
+}
+
+.my-work {
+    margin-bottom: 3rem;
+}
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "label content1"
+        "label content2"
+        "label content3";
+    padding: 20px 5%;
+    height: 500px;  
+    gap: 1.5rem;
+
+}
+
+.work-label {
+    grid-area: label;
+    padding: 1.5rem 0;
+}
+
+.work-content:first-child {
+    grid-area: content1;
+}
+
+.work-content:nth-child(2) {
+    grid-area: content2;
+}
+
+.work-content:last-child {
+    grid-area: content3;
+}
+
+.work-content {
+    display: flex;
+    border-bottom: 3px solid #BDC1CA;
+    padding: 1.5rem 0;
+    align-items: flex-start;
+    gap: 1.5rem;
+    
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hobbies {
+    padding: 20px 5%;
+}
+
+.hobby-header h2 {
+    margin: 0;
+    white-space: nowrap;                
+}
+
+.hobby-header p {
+    max-width: 500px;                  
+}
+
+.hobby-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+    gap: 24px;
+}
+
+.card {
+    height: 550px;
+    width: 260px;
+    overflow: hidden;
+    position: relative;
+}
+
+.placeholder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.placeholder {
+    height: 260px; 
+    width: 550px;
+    overflow: hidden;
+}
+
+.placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: transparent;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.overlay-text h4 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+.overlay-text:hover,  .overlay-text:focus {
+    background: #323743BF;
+    color: #FFFFFF;
+}
+
+.footer {
+    display: flex;
+    background-color: #1e2128;
+    color: #FDFEFF;
+    padding: 20px 5%;
+    gap: 40px;
+}
+
+.contacts {
+    flex: 1;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 1.5rem;
+}
+address p a {
+    color: #FFFFFF;
+}
+
+.socials {
+    display: flex;
+    justify-content: left;
+    gap: 3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-box {
+    position: relative;
+}
+
+.form-box label {
+    position: absolute;
+    top: -11px;
+    left: 5px;
+    z-index: 1;
+    background-color: #1e2128;
+    padding: 0 3px;
+}
+
+.form-inp {
+    border: 1px solid #DDE0E7;
+    outline: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    background: transparent;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.form-inp:focus {
+    outline:  2px solid #61C15C;
+}
+
+#message {
+    resize: none;
+    height: 150px;
+}   
+
+.form-btn {
+    background: #61C15C;
+    color: #FFFFFF;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    width: 200px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow .2s;
+}
+
+.form-btn:hover {
+    box-shadow: 0 0 10px #61C15C;
+}
+
+
+
+
+
 
