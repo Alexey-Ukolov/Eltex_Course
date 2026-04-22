@@ -1,0 +1,80 @@
+.hobby {
+    padding: 20px 8%;
+    margin-bottom: 3rem;
+}
+
+.hobby-label h2 {
+    margin: 0;
+    white-space: nowrap;                
+}
+
+.hobby-label p {
+    max-width: 500px;                  
+}
+
+.hobby-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.hobby-grid {
+  position: relative;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 264px);
+}
+
+.hobby-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.hobby-item-img {
+  object-fit: cover;
+  min-height: 100%;
+  width: 100%;
+}
+
+.hobby-item:nth-child(-n + 2) {
+  grid-row: span 2;
+}
+
+.hobby-item:nth-child(n + 3):nth-child(-n + 4) {
+  grid-column: span 2;
+}
+
+.hobby-item::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.hobby-item__overlay {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.hobby-item:hover .hobby-item__overlay {
+  opacity: 1;
+}
+
+.hobby-item:hover::after {
+  opacity: 1;
+}

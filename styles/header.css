@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);   
+    margin-bottom: 1rem;
+}
+
+.location {
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #68686A;
+    
+}
+
+.nav-links li a:hover {
+    color: var(--g-color);
+    text-shadow: 0 0 10px var(--g-color);
+}

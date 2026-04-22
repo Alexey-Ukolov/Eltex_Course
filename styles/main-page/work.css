@@ -1,0 +1,47 @@
+.work {
+    margin-bottom: 3rem;
+}
+.work-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "label content1"
+        "label content2"
+        "label content3";
+    padding: 20px 8%;
+    height: 500px;  
+    gap: 1.5rem;
+
+}
+
+.work-label {
+    grid-area: label;
+    padding: 1.5rem 0;
+}
+
+.work-itemt:first-child {
+    grid-area: content1;
+}
+
+.work-item:nth-child(2) {
+    grid-area: content2;
+}
+
+.work-item:last-child {
+    grid-area: content3;
+}
+
+.work-item {
+    display: flex;
+    border-bottom: 3px solid #BDC1CA;
+    padding: 1.5rem 0;
+    align-items: flex-start;
+    gap: 1.5rem;
+    
+}
+
+.work-position {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

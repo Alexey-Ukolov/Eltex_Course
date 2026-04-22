@@ -1,0 +1,15 @@
+.skills {
+    padding: 20px 8%;
+    margin-bottom: 3rem;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 30px;
+}
+
+.skills-item {
+    border-bottom: 3px solid #BDC1CA;
+    padding: 1rem 0;  
+    font-size: 24px;
+}
