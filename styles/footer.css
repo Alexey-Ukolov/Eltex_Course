@@ -1,0 +1,81 @@
+.footer {
+    --footer-font-color: #FDFEFF;
+    display: flex;
+    background-color: #1e2128;
+    color: var(--footer-font-color);
+    padding: 40px 8%;
+    gap: 40px;
+}
+
+.contacts {
+    flex: 1;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 1.5rem;
+}
+address p a {
+    color: var(--footer-font-color);
+}
+
+.socials {
+    display: flex;
+    justify-content: left;
+    gap: 3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-box {
+    position: relative;
+}
+
+.form-box label {
+    position: absolute;
+    top: -11px;
+    left: 5px;
+    z-index: 1;
+    background-color: #1e2128;
+    padding: 0 3px;
+}
+
+.form-inp {
+    border: 1px solid #DDE0E7;
+    outline: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    background: transparent;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    color: var(--footer-font-color);
+}
+
+.form-inp:focus {
+    outline:  2px solid var(--g-color);
+}
+
+#message {
+    resize: none;
+    height: 150px;
+}   
+
+.form-btn {
+    background: var(--g-color);
+    color: var(--footer-font-color);
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    width: 200px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow .2s;
+}
+
+.form-btn:hover {
+    box-shadow: 0 0 10px var(--g-color);
+}

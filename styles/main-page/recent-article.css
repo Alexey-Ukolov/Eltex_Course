@@ -1,0 +1,47 @@
+.recent-article-container {
+    margin-bottom: 3rem;
+}
+
+.recent-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 8%;
+    gap: 0;
+}
+
+.recent-article-content {
+    background-color: #FEF3EF;
+    padding: 3rem;
+}   
+
+.recent-article:nth-child(2) .recent-article-content {
+    background-color: #F4FBF4;
+}
+
+.recent-article-content h3 {
+    font-weight: 700px;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.recent-article-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recent-article-btn {
+    display: block;
+    width: fit-content; 
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #61C15C;
+    padding: 0.5rem 1.5rem;
+    margin: 0 auto;
+    color: #61C15C;
+    
+}
+
+.recent-article-btn:hover, .recent-article-btn:focus {
+    background: #61C15C40;
+}

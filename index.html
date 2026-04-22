@@ -6,7 +6,7 @@
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-image">
     <link rel="preload" href="styles/fonts.css" as="style">
     <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main-page/main-page.css">
     <title>Главная</title>
 </head>
 <body>
@@ -22,82 +22,82 @@
     </header>
 
     <main>
-        <section class="description">
-            <div class="description-content">
+        <section class="hero">
+            <div class="hero-content">
                 <h2>Обо мне</h2>
                 <p>Привет! Я фронтенд-разработчик. В IT уже 5 лет, из которых последние 3 плотно работаю с React и TypeScript.  
                 Люблю разбираться в сложных задачах и помогать новичкам не наступать на те же грабли, что и я когда-то.
                 </p>
                 
             </div>
-            <div class="description-img">
+            <div class="hero-img">
                 <img src="assets/images/image1.png" alt="Горы">
             </div>
         </section>
 
-        <section class="blogs">
-            <div class="blog">
-                <div class="blog-content">
+        <section class="recent-article-container">
+            <article class="recent-article">
+                <div class="recent-article-content">
                     <h3>Как создать адаптивный дизайн за 30 минут</h3>
                     <p>В этой статье я расскажу о ключевых принципах создания мобильных интерфейсов, которые одинаково хорошо выглядят на
                         всех устройствах. Вы узнаете о медиа-запросах, гибких сетках и практических примерах кода, которые можно использовать
                         прямо сейчас.  
                     </p>
                 </div>
-                <div class="blog-image">
+                <div class="recent-article-img">
                     <img src="assets/images/placeholder.png">
                 </div>
-            </div>
-            <div class="blog">
-                <div class="blog-content">
+            </article>
+            <article class="recent-article">
+                <div class="recent-article-content">
                     <h3>Как создать адаптивный дизайн за 30 минут</h3>
                     <p>В этой статье я расскажу о ключевых принципах создания мобильных интерфейсов, которые одинаково хорошо выглядят на
                         всех устройствах. Вы узнаете о медиа-запросах, гибких сетках и практических примерах кода, которые можно использовать
                         прямо сейчас.  
                     </p>
                 </div>
-                <div class="blog-image">
+                <div class="recent-article-img">
                     <img src="assets/images/placeholder.png">
                 </div>
-            </div>
-            <a href="blog.html" class="blog-btn">Все посты</a>
+            </article>
+            <a href="blog.html" class="recent-article-btn">Все посты</a>
         </section>
 
-        <section class="my-skills">
+        <section class="skills">
             <h2>Навыки</h2>
-            <div class="skills">
-                <div class="skill">Angular</div>
-                <div class="skill">TypeScript</div>
-                <div class="skill">Next.js</div>
-                <div class="skill">Git</div>
-                <div class="skill">Figma</div>
-                <div class="skill">Docker</div>
+            <div class="skills-container">
+                <div class="skills-item">Angular</div>
+                <div class="skills-item">TypeScript</div>
+                <div class="skills-item">Next.js</div>
+                <div class="skills-item">Git</div>
+                <div class="skills-item">Figma</div>
+                <div class="skills-item">Docker</div>
             </div>
         </section>
 
-        <section class="my-work">
-            <div class="work">
+        <section class="work">
+            <div class="work-container">
                 <div class="work-label">
                     <h2>Моя работа</h2>
                     <p>Duis nisi do exercitation in irure aliqua commodo nisi eu id reprehenderit dolore fugiat consectetur irure</p>
                 </div>
-                <div class="work-content">
+                <div class="work-item">
                     <div class="work-img"><img src="assets/images/iwork1.png"></div>
-                    <div class="text">
+                    <div class="work-position">
                         <p>Belhard (2019 - 2021)</p>
                         <p>Junior Frontend Developer</p>
                     </div>
                 </div>
-                <div class="work-content">
+                <div class="work-item">
                     <div class="work-img"><img src="assets/images/iwork2.png"></div>
-                    <div class="text">
+                    <div class="work-position">
                         <p>EPAM Systems (2021 - 2023)</p>
                         <p>Frontend Developer</p>
                     </div>
                 </div>
-                <div class="work-content">
+                <div class="work-item">
                     <div class="work-img"><img src="assets/images/iwork3.png"></div>
-                    <div class="text">
+                    <div class="work-position">
                         <p>SOFTSWISS (2023 - настоящее время)</p>
                         <p>Senior Frontend Developer</p>
                     </div>
@@ -105,32 +105,57 @@
             </div>
         </section>
 
-        <section class="hobbies">
-            <div class="hobby-header">
+        <section class="hobby">
+            <div class="hobby-label">
                 <h2>Хобби проекты</h2>
                 <p>
                     Duis nisi do exercitation in irure aliqua commodo nisi eu id reprehenderit dolore fugiat consectetur irure labore est ea.
                 </p>
             </div>
             <div class="hobby-grid">
-                <div class="card">
-                    <img src="assets/images/hobby2.png">
-                    <div class="overlay-text">
-                        <h4>
+                <div class="hobby-item">
+                    <img class="hobby-item-img" src="assets/images/hobby2.png">
+                    <div class="hobby-item__overlay">
+                        <h3>
                             Название проекта
-                        </h4>
+                        </h3>
                         <p>
                             Duis nisi do exercitation in irure aliqua commodo nisi eu id reprehenderit dolore fugiat consectetur irure labore est ea.
                         </p>
                     </div>
-                    <div class="overlay-color"></div>
                 </div>  
-                <div class="card">
-                    <img src="assets/images/hobby1.png">
+                <div class="hobby-item">
+                    <img class="hobby-item-img" src="assets/images/hobby1.png">
+                    <div class="hobby-item__overlay">
+                        <h3>
+                            Название проекта
+                        </h3>
+                        <p>
+                            Duis nisi do exercitation in irure aliqua commodo nisi eu id reprehenderit dolore fugiat consectetur irure labore est ea.
+                        </p>
+                    </div>
                 </div>
-                <div class="placeholder-container">
-                    <div class="placeholder"><img src="assets/images/placeholder.png"></div>
-                    <div class="placeholder"><img src="assets/images/placeholder.png"></div>
+                <div class="hobby-item">
+                    <img class="hobby-item-img" src="assets/images/placeholder.png">
+                    <div class="hobby-item__overlay">
+                        <h3>
+                            Название проекта
+                        </h3>
+                        <p>
+                            Duis nisi do exercitation in irure aliqua commodo nisi eu id reprehenderit dolore fugiat consectetur irure labore est ea.
+                        </p>
+                    </div>
+                </div>
+                <div class="hobby-item">
+                    <img class="hobby-item-img" src="assets/images/placeholder.png">
+                    <div class="hobby-item__overlay">
+                        <h3>
+                            Название проекта
+                        </h3>
+                        <p>
+                            Duis nisi do exercitation in irure aliqua commodo nisi eu id reprehenderit dolore fugiat consectetur irure labore est ea.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
