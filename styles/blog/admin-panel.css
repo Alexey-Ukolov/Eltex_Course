@@ -1,0 +1,164 @@
+.admin-section {
+    margin: 20px 8%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background: #FAFAFA;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+
+    transition: 
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.3s ease;
+}
+
+.admin-section.show {
+    max-height: 600px;
+    opacity: 1;
+}
+.create-article {
+    padding: 20px;
+    flex-direction: column;
+}   
+
+.admin-panel {
+    position: fixed;    
+    top: 25%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+    background-color: white;
+    box-shadow: -1px 4px 10px rgba(0,0,0,0.5); 
+    
+}
+
+.admin-panel button {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;  
+}
+
+.create-article h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.create-article label {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #555;
+}
+
+.create-article input,
+.create-article textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px 12px;
+    max-height: 300px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-family: inherit;
+
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.create-article input:focus,
+.create-article textarea:focus {
+    outline: none;
+    border-color: #61C15C;
+    box-shadow: 0 0 0 2px #61C15C20;
+}
+
+.create-article textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.form-actions button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #61C15C;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addPostBtn {
+    background: #61C15C;
+    color: white;
+}
+
+#cancelBtn {
+    background: transparent;
+    color: #61C15C;
+}
+
+#cancelBtn:hover {
+    background: #61C15C20;
+}
+
+#statsDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #BDC1CA;
+    border-radius: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+#closeDialog {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--g-color);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dialog-box {
+    padding: 20px;
+}
+
+.dialog-box h2 {
+    font-size: 24px;
+}
+
+.card {
+    border: 1px solid #BDC1CA;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+    width: 150px;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.5); 
+
+}
+
+.card-stats {
+    font-size: 40px;
+    font-weight: 500;
+}

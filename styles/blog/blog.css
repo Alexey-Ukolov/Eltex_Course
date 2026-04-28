@@ -3,6 +3,7 @@
 @import "../footer.css";
 
 @import "./article.css";
+@import "./admin-panel.css";
 
 .description {
     display: flex;
