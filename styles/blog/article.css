@@ -10,6 +10,7 @@
 }
 
 .blog-article {
+  position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -23,6 +24,7 @@
 .blog-article-img {  
   flex: 1 0 50%;
   display: flex;
+  max-width: 45vw;
   justify-content: center;
   align-items: center;
 }
@@ -65,6 +67,22 @@
 
 .blog-article-btn:hover, .blog-article-blog-btn:focus {
     background: #61C15C40;
+}
+
+.article-delete-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;  
+}
+
+.blog-article:hover .article-delete-btn {
+  display: block;
 }
 
 @media (max-width: 800px) {
