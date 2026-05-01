@@ -20,6 +20,14 @@ cancelBtn.addEventListener("click", () => {
     form.classList.remove("show");
 });
 
+container.addEventListener("click", (event) => {
+    const deleteBtn = event.target.closest(".article-delete-btn");
+    if (deleteBtn) {
+        const article = deleteBtn.closest(".blog-article");
+        article.remove();
+        postCount--;
+    }
+});
 addPostBtn.addEventListener("click", () => {
     const template = `
         <article class="blog-article">
@@ -31,6 +39,7 @@ addPostBtn.addEventListener("click", () => {
                 <p class="blog-article-description">Тестовый текст статьи...</p>
                 <time>${new Date().toLocaleDateString()}</time>
             </div>
+            <button id="article-delete-btn" class="article-delete-btn">✕</button>
         </article>
     `;
 
