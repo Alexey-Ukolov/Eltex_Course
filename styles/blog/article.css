@@ -24,6 +24,7 @@
 .blog-article-img {  
   flex: 1 0 50%;
   display: flex;
+  max-width: 45vw;
   justify-content: center;
   align-items: center;
 }
